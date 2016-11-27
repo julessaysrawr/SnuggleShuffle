@@ -1,0 +1,5 @@
+# config files
+config.js
+
+# OS generated files
+*.DS_Store
