@@ -3,33 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>SnuggleShuffle</title>
+    <link href="https://fonts.googleapis.com/css?family=Marvel|Permanent+Marker|Reenie+Beanie" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"> -->
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
   <body>
-    <!-- <nav>
-      <ul class="left">
-        <li>Random</li>
-        <li>Browse</li>
-        <li>New</li>
-      </ul>
-    </nav> -->
+    <header>
+        <h1 id="snuggle-shuffle"> Snuggle Shuffle </h1>
+    </header>
+
+
+
     <content>
       <div id="main-content">
-        <div id="selection">
-          <h1 class="heading">I need:</h1>
-          <a href="#"><button type="button" class="button" onclick="getSnuggles(apiKey);">Snuggles</button></a>
-          <a href="#"><button type="button" class="button" onclick="getMoralSupport(apiKey);">Moral Support</button></a>
-          <a href="#"><button type="button" class="button" onclick="getAllStuffies(apiKey);">All the Stuffies!!!</button></a>
-        </div>
+        <nav>
+            <h1 class="heading">I need...</h1>
+            <a href="#"><button type="button" class="button" id="snuggles">Snuggles</button></a>
+            <a href="#"><button type="button" class="button" id="moral-support">Moral Support</button></a>
+            <a href="#"><button type="button" class="button" id="all-stuffies">All the Stuffies!!!</button></a>
+        </nav>
         <div id="results">
         </div>
       </div>
     </content>
 
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <!-- <script src="code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="code.jquery.com/ui/1.12.0/jquery-ui.js"></script> -->
     <script src="config/config.js"></script>
-    <script src="js/application.js"></script>
+    <script src="js/application3.js"></script>
     <script type="text/javascript"></script>
   </body>
 </html>

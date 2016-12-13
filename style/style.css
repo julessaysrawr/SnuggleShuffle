@@ -1,24 +1,33 @@
 /* class = .class */
 /* id = #id */
-:root {
-  --red: #CD2C24;
-  --salmon: #F2594B;
-  --pink: #F2836B;
-  --yellow: #F2E1AC;
-  --green: #63A69F;
-  --maroon: #A54C39;
-  --pale-pink: #F4C0B5;
-  --mauve: #725A55;
-  --brown: #723E33;
-}
+  :root {
+    --red: #CD2C24;
+    --salmon: #F2594B;
+    --pink: #F2836B;
+    --yellow: #F2E1AC;
+    --green: #63A69F;
+    --maroon: #A54C39;
+    --pale-pink: #F4C0B5;
+    --mauve: #725A55;
+    --brown: #723E33;
+  }
 
 html {
   font-size: 62.5%;
+  /*font-family: 'Permanent Marker', cursive;*/
+  /*font-family: 'Reenie Beanie', cursive;*/
+  /*font-family: 'Marvel', sans-serif;*/
   /* 1rem = 10px */
 }
+header {
+  /*background-color: var(--yellow);*/
+}
+
 h1 {
   font-weight: bold;
-  font-size: 3rem;
+  /*font-family: "Permanent Marker", cursive;*/
+  /*font-family: "Reenie Beanie", cursive;*/
+  font-size: 5rem;
 }
 
 body {
@@ -27,103 +36,74 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  /*color: white;*/
+
+}
+
+#snuggle-shuffle {
+  display: none;
+  /*text-align: center;*/
+  /*color: var(--pink);*/
+  color: var(--maroon);
+  font-family: "Permanent Marker", cursive;
+  /*background-color: var(--maroon);*/
+  font-size: 10rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  /*text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
+  text-shadow: .1rem .1rem 1rem var(--pale-pink);
 }
 
 #main-content {
   background-color: var(--yellow);
-  width: 85%;
-  margin: 5rem auto 0rem auto;
-  padding: 5rem 0rem 5rem 0rem;
+  width: 95%;
+  margin: 3rem auto 3rem auto;
+  padding: 5rem 0rem 70rem 0rem;
+  /*padding: 5rem 0rem 10rem 0rem;*/
+
 }
 
 .heading{
-  /*border: 1px solid grey;*/
-  text-align: center;
-  position: relative;
-  right: 30%;
+  font-family: "Reenie Beanie", cursive;
+  color: var(--maroon);
+  font-size: 8rem;
+  display: inline-block;
+  margin-left: 1rem;
 }
 
 
-#selection {
-  /*margin-top: 100px;*/
-  /*margin-right: auto;*/
-  /*margin-left: auto;*/
-  /*margin: 100px;*/
-  position: relative;
-  left: 30%;
-  /*margin: 0rem auto 0rem auto;*/
-  /*border: 1px solid grey;*/
-  /*padding: 150px;*/
-
-  /*padding-right: 30%;*/
-  /*padding-left: 30%;*/
+nav {
+  width: 20%;
+  float: left;
+  padding-left: 5rem;
 }
 
 .button {
-  background-color: var(--salmon);
+  background-color: var(--pink);
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: var(--maroon);
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-  /*display: inline-block;*/
+  font-family: "Reenie Beanie", cursive;
+  font-size: 4rem;
   display: block;
-  font-size: 16px;
   margin: 5px 2px;
-  width: 40%;
+  width: 85%;
   cursor: pointer;
 }
 
-.left {
-  /*float: right;*/
-  position: absolute;
-  /*right: 0px;*/
-  left: 0px;
-  /*width: 300px;*/
-  /*border: 1px solid grey;*/
-  padding: 50px;
-  /*display: block;*/
-  list-style: none;
-  font-weight: bold;
-}
-.left:hover {
-  color: green;
-}
-
-/*nav {
-  display: block;
-}*/
-
-#temp_results {
-  height: 30%;
-  width: 30%;
-  margin-top: 200px;
-  position: relative;
-  left: 30%;
-  display: block;
-}
-
-.profile {
-  display: inline;
-  position: relative;
-  left: 30%;
-  margin-top: 100px;
-}
 
 #results {
-  margin: 5rem auto 2rem auto;
-  padding: 2rem auto 2rem auto;
-  width: 90%;
-  height: 100%;
+  margin: 0rem 5rem 0rem 0rem;
+  width: 73%;
+  float: right;
   background-color: var(--pink);
 }
 
 .winner-name{
   text-align: center;
-  /*display: inline-block;*/
-  /*display: block;*/
-  /*margin-top: 2rem;*/
+  font-family: 'Permanent Marker', cursive;
   padding: 3rem 0rem;
   background-color: var(--maroon);
   color: var(--pale-pink);
@@ -133,15 +113,11 @@ a {
   /*height: 30%;*/
   width: 30%;
   margin: 2rem auto 2rem auto;
-  /*position: relative;
-  left: 30%;
-  right: 30%;*/
   display: block;
 }
 
 .all-stuffies {
-  /*background-color: LightGrey;*/
-  display: inline-grid;
+  margin: 0rem auto 0rem 4rem;
 }
 
 .each-stuffy {
@@ -161,6 +137,53 @@ a {
   display: block;
 }
 
-/*ul {
-  columns: 3;
-}*/
+
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    nav {
+      width: 100%;
+      margin: 0rem 0rem 0rem 20rem;
+      display: block;
+    }
+    .heading{
+      font-family: "Reenie Beanie", cursive;
+      text-align: center;
+      position: relative;
+      color: var(--maroon);
+      font-size: 8rem;
+      padding-left: 8rem;
+    }
+    .button {
+      background-color: var(--pink);
+      border: none;
+      color: var(--maroon);
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      font-family: "Reenie Beanie", cursive;
+      font-size: 4rem;
+      display: block;
+      margin: 5px 2px;
+      width: 40%;
+      cursor: pointer;
+    }
+    #results {
+      margin: 35rem auto 5rem auto;
+      width: 90%;
+      height: 100%;
+      float: none;
+      background-color: var(--pink);
+    }
+    #main-content {
+      padding: 5rem 0rem 5rem 0rem;
+    }
+    #snuggle-shuffle {
+      width: 100%;
+      margin-top: 5rem;
+      display: block;
+    }
+}
