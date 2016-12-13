@@ -138,7 +138,7 @@ nav {
 }
 
 
-
+/************************* Media Queries for iPhone 6 and 6+ *************************/
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
@@ -176,7 +176,6 @@ nav {
       width: 90%;
       height: 100%;
       float: none;
-      background-color: var(--pink);
     }
     #main-content {
       padding: 5rem 0rem 5rem 0rem;
@@ -185,5 +184,31 @@ nav {
       width: 100%;
       margin-top: 5rem;
       display: block;
+    }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #snuggle-shuffle {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-left: 0rem;
+    }
+    nav {
+      margin: 0rem 0rem 0rem 0rem;
+      padding-left: 3rem;
+    }
+    #main-content {
+      padding: 3rem 0rem 45rem 0rem;
+    }
+    .heading{
+      font-size: 5rem;
+    }
+    #results {
+      margin: 0rem 3rem 0rem 0rem;
     }
 }
