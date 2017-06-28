@@ -1,4 +1,0 @@
-var config = {
-  apiKey: '',
-  author: ''
-}
