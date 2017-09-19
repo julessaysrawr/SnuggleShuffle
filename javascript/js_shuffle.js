@@ -56,7 +56,7 @@
 
       function addStuffyToPage(name, url) {
 
-        var $name = $('<h1 class="winner-name"></h1>');
+        var $name = $('<h3></h3>');
         var $result = $('<div></div>');
         //clear previous winner
         // $('#winner').remove($name);
@@ -67,7 +67,7 @@
           //insert empty profile photo
           var $pic = $('<img class="winner-pic" src="images/cat_profile-512.png" alt="' + name + '"/>');
         } else {
-          var $pic = $('<img class="winner-pic" src="' + url + '" alt="' + name + '"/>');
+          var $pic = $('<img class="winner-pic img-rounded" src="' + url + '" alt="' + name + '"/>');
         }
 
         $name.append(name);
@@ -100,7 +100,7 @@
               // console.log("Real URL: " + url);
               // var $pic = $('<img class="winner-pic" src="images/cat_profile-512.png" alt="' + animal.fields.Name + '"/>');
               // console.log(name);
-              var $pic = $('<img class="winner-pic" src="' + url + '" alt="' + name + '"/>');
+              var $pic = $('<img class="winner-pic img-rounded" src="' + url + '" alt="' + name + '"/>');
               $eachStuffy.append($pic);
               $allStuffies.append($eachStuffy);
               // $list.append($stuffy);

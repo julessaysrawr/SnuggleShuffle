@@ -1,0 +1,102 @@
+/*---GENERAL---*/
+
+:root {
+    --aqua: #4abdac;
+    --orange: #ff7163;
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--aqua);
+    font-family: 'Fresca', sans-serif;
+    font-size: 16px;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+/*---BUTTONS AND ICONS---*/
+
+.btn-custom {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--white);
+    border: 0;
+    letter-spacing: 3px;
+    border-radius: 25px;
+}
+
+.btn-custom:focus {
+    outline: none;
+}
+
+i {
+    font-size: 700%;
+    color: var(--orange);
+    margin-top: 50px;
+}
+
+
+/*---HEADER---*/
+
+header {
+    text-align: center;
+}
+
+header a {
+    color: var(--white);
+    font-size: 115%;
+    letter-spacing: 2px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/*---RESULTS---*/
+
+img {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    margin: 10px 0;
+    padding: 0;
+}
+
+
+/*---MEDIA QUERIES---*/
+
+@media (min-width: 992px) {
+    header {
+        padding: 35px 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    img {
+        padding-top: 25px;
+    }
+    .btn-custom {
+        width: 35%;
+    }
+    .btn-custom:last-child {
+        margin-bottom: 50px;
+        margin-left: 15px;
+    }
+    .btn-custom:hover {
+        background-color: var(--white);
+        color: var(--black);
+    }
+    img {
+        width: 50%;
+    }
+}
